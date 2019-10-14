@@ -65,37 +65,33 @@ struct CompassMarkerView: View {
         VStack {
             Text(marker.degreeText())
                     .fontWeight(.light)
-                    .rotationEffect(self.textAngle()) // 1
+                    .rotationEffect(self.textAngle())
 
             Capsule()
-                    .frame(width: self.capsuleWidth(), // 2
-                            height: self.capsuleHeight()) // 3
-                    .foregroundColor(self.capsuleColor()) // 4
+                    .frame(width: self.capsuleWidth(),
+                            height: self.capsuleHeight())
+                    .foregroundColor(self.capsuleColor())
                     .padding(.bottom, 120)
 
             Text(marker.label)
                     .fontWeight(.bold)
-                    .rotationEffect(self.textAngle()) // 5
+                    .rotationEffect(self.textAngle())
                     .padding(.bottom, 80)
         }.rotationEffect(Angle(degrees: marker.degrees))
     }
     
-    // 1
     private func capsuleWidth() -> CGFloat {
-        return degrees == 0 ? 7 : 3
+        return self.marker.degrees == 0 ? 7 : 3
     }
-
-    // 2
+    
     private func capsuleHeight() -> CGFloat {
-        return degrees == 0 ? 45 : 30
+        return self.marker.degrees == 0 ? 45 : 30
     }
-
-    // 3
+    
     private func capsuleColor() -> Color {
-        return degrees == 0 ? .red : .gray
+        return self.marker.degrees == 0 ? .red : .gray
     }
-
-    // 4
+    
     private func textAngle() -> Angle {
         return Angle(degrees: -self.compassDegress - self.marker.degrees)
     }
