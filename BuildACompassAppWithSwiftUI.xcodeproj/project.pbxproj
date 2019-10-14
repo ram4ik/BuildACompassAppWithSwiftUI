@@ -13,6 +13,7 @@
 		952DF9AE2354911500799FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952DF9AD2354911500799FAF /* Assets.xcassets */; };
 		952DF9B12354911500799FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952DF9B02354911500799FAF /* Preview Assets.xcassets */; };
 		952DF9B42354911500799FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952DF9B22354911500799FAF /* LaunchScreen.storyboard */; };
+		952DF9BC2354982400799FAF /* CompassHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952DF9BB2354982400799FAF /* CompassHeading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		952DF9B02354911500799FAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		952DF9B32354911500799FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		952DF9B52354911500799FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		952DF9BB2354982400799FAF /* CompassHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassHeading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				952DF9B22354911500799FAF /* LaunchScreen.storyboard */,
 				952DF9B52354911500799FAF /* Info.plist */,
 				952DF9AF2354911500799FAF /* Preview Content */,
+				952DF9BB2354982400799FAF /* CompassHeading.swift */,
 			);
 			path = BuildACompassAppWithSwiftUI;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				952DF9A82354911400799FAF /* AppDelegate.swift in Sources */,
+				952DF9BC2354982400799FAF /* CompassHeading.swift in Sources */,
 				952DF9AA2354911400799FAF /* SceneDelegate.swift in Sources */,
 				952DF9AC2354911400799FAF /* ContentView.swift in Sources */,
 			);
