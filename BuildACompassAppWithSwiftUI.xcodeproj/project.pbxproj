@@ -61,11 +61,11 @@
 				952DF9A72354911400799FAF /* AppDelegate.swift */,
 				952DF9A92354911400799FAF /* SceneDelegate.swift */,
 				952DF9AB2354911400799FAF /* ContentView.swift */,
+				952DF9BB2354982400799FAF /* CompassHeading.swift */,
 				952DF9AD2354911500799FAF /* Assets.xcassets */,
 				952DF9B22354911500799FAF /* LaunchScreen.storyboard */,
 				952DF9B52354911500799FAF /* Info.plist */,
 				952DF9AF2354911500799FAF /* Preview Content */,
-				952DF9BB2354982400799FAF /* CompassHeading.swift */,
 			);
 			path = BuildACompassAppWithSwiftUI;
 			sourceTree = "<group>";
