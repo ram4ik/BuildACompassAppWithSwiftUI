@@ -64,20 +64,20 @@ struct CompassMarkerView: View {
     var body: some View {
         VStack {
             Text(marker.degreeText())
-                .fontWeight(.light)
-                .rotationEffect(Angle(degrees: 0))
+                    .fontWeight(.light)
+                    .rotationEffect(self.textAngle()) // 1
 
             Capsule()
-                .frame(width: 3, height: 30)
-                .foregroundColor(Color.gray)
-                .padding(.bottom, 120)
+                    .frame(width: self.capsuleWidth(), // 2
+                            height: self.capsuleHeight()) // 3
+                    .foregroundColor(self.capsuleColor()) // 4
+                    .padding(.bottom, 120)
 
             Text(marker.label)
-                .fontWeight(.bold)
-                .rotationEffect(Angle(degrees: 0))
-                .padding(.bottom, 80)
-        }
-        .rotationEffect(Angle(degrees: marker.degrees))
+                    .fontWeight(.bold)
+                    .rotationEffect(self.textAngle()) // 5
+                    .padding(.bottom, 80)
+        }.rotationEffect(Angle(degrees: marker.degrees))
     }
     
     // 1
